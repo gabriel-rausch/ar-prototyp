@@ -235,7 +235,7 @@ class Application {
     const side = 5;
     const geometry = new THREE.BoxGeometry(side, side, side);
     const material = new THREE.MeshLambertMaterial({
-      color: 0x228b22, // forest green
+      color: 0x228b22,
     });
 
     for (let i = 0; i < 50; i += 1) {
@@ -254,7 +254,6 @@ class Application {
 
 }
 
-// wrap everything inside a function scope and invoke it (IIFE, a.k.a. SEAF)
 (() => {
   const app = new Application({
     container: document.getElementById('canvas-container'),
